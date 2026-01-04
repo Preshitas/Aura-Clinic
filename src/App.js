@@ -9,8 +9,8 @@ import DoctorModal from '../components/DoctorModal';
 import TrustSection from '../components/TrustSection';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
-import { SERVICES_MAP, CONTENT } from '../constants';
-import { Service, Language, Doctor } from '../types';
+import { SERVICES_MAP, CONTENT } from './constants';
+import { Service, Language, Doctor } from './types';
 import { PartyPopper } from 'lucide-react';
 
 const App: React.FC = () => {
