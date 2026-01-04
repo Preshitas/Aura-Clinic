@@ -282,11 +282,11 @@ export const DOCTORS_MAP: Record<Language, Doctor[]> = {
     },
     {
       id: "dr-vani",
-      name: "./Dr. Vani Chhag",
+      name: "Dr. Vani Chhag",
       credentials: "MD (Homeopathy), DNHE",
       role: "Associate Professor, Medicine Dept.",
       specialty: "Nutrition & Lifestyle Disorders",
-      image: "/Dr.Vani_Chhag.png", // NOTE: Ensure dr-vani.png is in your public/root folder
+      image: "./Dr.Vani_Chhag.png", // NOTE: Ensure dr-vani.png is in your public/root folder
       experience: "8+ Years Experience",
       mrn: "G-18231",
       email: "kaivalyamclinic@gmail.com",
