@@ -21,15 +21,15 @@ jobs:
 
       # Use --prefix to tell npm specifically where to run install
       - name: Install dependencies
-        run: npm install --prefix ./Aura-Clinic
+        run: npm install
 
       # Use --prefix to tell npm specifically where to run the build script
       - name: Build the project
-        run: npm run build --prefix ./Aura-Clinic
+        run: npm run build 
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # The build folder is created inside the Aura-Clinic folder
-          folder: Aura-Clinic/build
+          folder: build
           branch: gh-pages
