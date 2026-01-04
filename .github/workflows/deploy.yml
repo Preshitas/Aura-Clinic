@@ -21,17 +21,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        # This tells GitHub to go into the 'Aura-Clinic' folder first
-        working-directory: ./Aura-Clinic
 
       - name: Build the project
         run: npm run build
-        # This tells GitHub to go into the 'Aura-Clinic' folder first
-        working-directory: ./Aura-Clinic
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # The build folder is now inside the Aura-Clinic folder
-          folder: Aura-Clinic/build 
+          folder: build # Assuming the build folder is created at the root
           branch: gh-pages
