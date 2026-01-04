@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import ServiceCard from '../components/ServiceCard';
-import Modal from '../components/Modal';
-import DoctorSection from '../components/DoctorSection';
-import DoctorModal from '../components/DoctorModal';
-import TrustSection from '../components/TrustSection';
-import FAQ from '../components/FAQ';
-import Footer from '../components/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ServiceCard from './components/ServiceCard';
+import Modal from './components/Modal';
+import DoctorSection from './components/DoctorSection';
+import DoctorModal from './components/DoctorModal';
+import TrustSection from './components/TrustSection';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 import { SERVICES_MAP, CONTENT } from './constants';
 import { Service, Language, Doctor } from './types';
 import { PartyPopper } from 'lucide-react';
