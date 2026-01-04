@@ -14,24 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: List files # Debug step
-        run: ls -R
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # Use --prefix to tell npm specifically where to run install
       - name: Install dependencies
-        run: npm install
-        working-directory: ./Aura-Clinic
+        run: npm install --prefix ./Aura-Clinic
 
+      # Use --prefix to tell npm specifically where to run the build script
       - name: Build the project
-        run: npm run build
-        working-directory: ./Aura-Clinic
+        run: npm run build --prefix ./Aura-Clinic
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Aura-Clinic/build #
+          # The build folder is created inside the Aura-Clinic folder
+          folder: Aura-Clinic/build
           branch: gh-pages
