@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/home/static/js/main.8fdbd100.js",
-    "index.html": "/home/index.html",
-    "main.8fdbd100.js.map": "/home/static/js/main.8fdbd100.js.map"
+    "main.js": "/Aura-Clinic/static/js/main.8fdbd100.js",
+    "index.html": "/Aura-Clinic/index.html",
+    "main.8fdbd100.js.map": "/Aura-Clinic/static/js/main.8fdbd100.js.map"
   },
   "entrypoints": [
     "static/js/main.8fdbd100.js"
