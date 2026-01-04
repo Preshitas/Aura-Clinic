@@ -271,7 +271,7 @@ export const DOCTORS_MAP: Record<Language, Doctor[]> = {
       credentials: "MD (Hom), FMC (USA)",
       role: "Assistant Professor, Anatomy Dept.",
       specialty: "Clinical Cosmetology & Homeopathy",
-      image: "/dr-kalindi.png", // NOTE: Ensure dr-kalindi.png is in your public/root folder
+      image: "/Dr.KalindiSoni.png", // NOTE: Ensure dr-kalindi.png is in your public/root folder
       experience: "10+ Years Experience",
       mrn: "G-17949",
       email: "dr.kalindisoni@gmail.com",
@@ -286,7 +286,7 @@ export const DOCTORS_MAP: Record<Language, Doctor[]> = {
       credentials: "MD (Homeopathy), DNHE",
       role: "Associate Professor, Medicine Dept.",
       specialty: "Nutrition & Lifestyle Disorders",
-      image: "/dr-vani.png", // NOTE: Ensure dr-vani.png is in your public/root folder
+      image: "/Dr.Vani_Chhag.png", // NOTE: Ensure dr-vani.png is in your public/root folder
       experience: "8+ Years Experience",
       mrn: "G-18231",
       email: "kaivalyamclinic@gmail.com",
