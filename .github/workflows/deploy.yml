@@ -2,10 +2,10 @@ name: Deploy React to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Runs this action when code is pushed to the main branch
+    branches: ["main"]
 
 permissions:
-  contents: write # Required to push the build files to the gh-pages branch
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -17,18 +17,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Uses a current stable version of Node
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
+        # This tells GitHub to go into the 'Aura-Clinic' folder first
         working-directory: ./Aura-Clinic
 
       - name: Build the project
         run: npm run build
+        # This tells GitHub to go into the 'Aura-Clinic' folder first
         working-directory: ./Aura-Clinic
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Aura-Clinic/build # The folder the build process generated
-          branch: gh-pages # The branch the action should deploy to.
+          # The build folder is now inside the Aura-Clinic folder
+          folder: Aura-Clinic/build 
+          branch: gh-pages
